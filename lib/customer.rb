@@ -21,16 +21,24 @@ class Customer
     meal.customer == self
   end
 end
+<<<<<<< HEAD
 def waiters
   meals.map do |meal|
       meal.waiter
     end
 end
+=======
+>>>>>>> 710ce1a98294a5de54b622ec48cc22ea6e5606fd
 def new_meal_20_percent(waiter, total)
     tip = total * 0.2
     Meal.new(waiter, self, total, tip)
   end
+<<<<<<< HEAD
  def self.oldest_customer
+=======
+ 
+  def self.oldest_customer
+>>>>>>> 710ce1a98294a5de54b622ec48cc22ea6e5606fd
     oldest_age = 0
     oldest_customer = nil
     self.all.each do |customer|
@@ -40,7 +48,10 @@ def new_meal_20_percent(waiter, total)
       end
     end
     oldest_customer
+<<<<<<< HEAD
   end
  
+=======
+>>>>>>> 710ce1a98294a5de54b622ec48cc22ea6e5606fd
 
 end
